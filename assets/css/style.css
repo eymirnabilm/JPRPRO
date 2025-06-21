@@ -1,0 +1,303 @@
+/* Custom styles for JPRPRO website */
+
+/* Custom properties */
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #60a5fa;
+    --secondary-color: #10b981;
+    --accent-color: #f59e0b;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --background-light: #f3f4f6;
+    --white: #ffffff;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--background-light);
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%), url('../hero-bg.svg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+/* Service cards */
+.service-card {
+    transition: all var(--transition-normal);
+    border: none;
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card .card-body {
+    padding: 1.5rem;
+}
+
+.service-card .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-image {
+    height: 220px;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+/* Feature icons */
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.25rem;
+    transition: all var(--transition-normal);
+    background: var(--white);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--accent-color);
+    box-shadow: var(--shadow-md);
+}
+
+/* Custom buttons */
+.btn-primary {
+    padding: 0.75rem 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all var(--transition-normal);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: var(--transition-normal);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover::after {
+    left: 100%;
+}
+
+/* Form styling */
+.form-control {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.form-text {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Status badges */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Timeline styling */
+.status-timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.status-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.status-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.status-item::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.status-item.active::before {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.status-item.completed::before {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.status-item.rejected::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+    padding: 5rem 0 4rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    padding: 0.25rem 0;
+    display: inline-block;
+    position: relative;
+}
+
+.footer a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-light);
+    transition: width var(--transition-normal);
+}
+
+.footer a:hover {
+    color: var(--primary-light);
+}
+
+.footer a:hover::after {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .status-timeline {
+        padding-left: 30px;
+    }
+
+    .status-item::before {
+        left: -30px;
+    }
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

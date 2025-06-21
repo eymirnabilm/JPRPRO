@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+    <!-- Background Pattern -->
+    <defs>
+        <pattern id="cleaning-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <!-- Cleaning Icons Pattern -->
+            <g fill="#ffffff" opacity="0.1">
+                <!-- Broom Icon -->
+                <path d="M30 20l5 40h10l5-40zM35 60v20M45 60v20"/>
+                
+                <!-- Spray Bottle Icon -->
+                <path d="M70 30h15v40h-15zM75 20v10M80 10v20"/>
+                
+                <!-- Duster Icon -->
+                <path d="M20 70l10 20l10-20z"/>
+                
+                <!-- Bucket Icon -->
+                <path d="M60 80c0 5.5-4.5 10-10 10s-10-4.5-10-10h20z"/>
+            </g>
+        </pattern>
+    </defs>
+
+    <!-- Main Background -->
+    <rect width="100%" height="100%" fill="#0d6efd"/>
+
+    <!-- Pattern Overlay -->
+    <rect width="100%" height="100%" fill="url(#cleaning-pattern)"/>
+
+    <!-- Wave Shapes -->
+    <path d="M0 800c300-100 600-100 960 0s660 100 960 0v280H0z" fill="#ffffff" opacity="0.1"/>
+    <path d="M0 850c300-100 600-100 960 0s660 100 960 0v230H0z" fill="#ffffff" opacity="0.15"/>
+    <path d="M0 900c300-100 600-100 960 0s660 100 960 0v180H0z" fill="#ffffff" opacity="0.2"/>
+
+    <!-- Decorative Circles -->
+    <g fill="#ffffff" opacity="0.05">
+        <circle cx="200" cy="200" r="100"/>
+        <circle cx="1720" cy="300" r="150"/>
+        <circle cx="960" cy="150" r="80"/>
+        <circle cx="500" cy="400" r="120"/>
+        <circle cx="1400" cy="500" r="90"/>
+    </g>
+</svg>

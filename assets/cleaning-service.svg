@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <!-- Person -->
+    <g fill="#0d6efd">
+        <!-- Body -->
+        <path d="M250 150c-27.6 0-50-22.4-50-50s22.4-50 50-50 50 22.4 50 50-22.4 50-50 50zm0-90c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40z"/>
+        <path d="M340 500H160c-5.5 0-10-4.5-10-10V240c0-5.5 4.5-10 10-10h180c5.5 0 10 4.5 10 10v250c0 5.5-4.5 10-10 10zM170 480h160V250H170v230z"/>
+    </g>
+
+    <!-- Cleaning Equipment -->
+    <g fill="#198754">
+        <!-- Mop Handle -->
+        <rect x="350" y="200" width="20" height="250" rx="5"/>
+        <!-- Mop Head -->
+        <path d="M330 440h60v20c0 11-9 20-20 20h-20c-11 0-20-9-20-20v-20z"/>
+        <!-- Bucket -->
+        <path d="M100 380h100v100H100z"/>
+        <path d="M90 370h120v20H90z"/>
+        <!-- Water in Bucket -->
+        <path fill="#0dcaf0" d="M110 400h80v60h-80z"/>
+    </g>
+
+    <!-- Cleaning Bubbles -->
+    <g fill="#0dcaf0" opacity="0.6">
+        <circle cx="150" cy="350" r="10"/>
+        <circle cx="180" cy="330" r="8"/>
+        <circle cx="200" cy="360" r="12"/>
+        <circle cx="160" cy="380" r="6"/>
+    </g>
+
+    <!-- Sparkles -->
+    <g fill="#ffc107">
+        <path d="M400 150l10 10-10 10-10-10z"/>
+        <path d="M120 200l8 8-8 8-8-8z"/>
+        <path d="M350 300l6 6-6 6-6-6z"/>
+    </g>
+</svg>
