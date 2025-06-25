@@ -71,15 +71,3 @@ JPRPRO adalah aplikasi web untuk layanan jasa pembersihan rumah profesional. Apl
 1. Login ke panel admin
 2. Akses menu "Kelola Pesanan"
 3. Lihat detail pesanan dan update status
-
-## Kontribusi
-Kami sangat menghargai kontribusi Anda untuk pengembangan JPRPRO. Silakan fork repositori ini dan kirimkan pull request untuk perbaikan atau penambahan fitur.
-
-## Lisensi
-Hak Cipta © 2025 JPRPRO. Hak cipta dilindungi undang-undang.
-
-## Kontak
-Untuk informasi lebih lanjut, silakan hubungi:
-- Email: info@jprpro.com
-- Website: www.jprpro.com
-- Telepon: +62 123 4567 890

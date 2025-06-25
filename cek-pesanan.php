@@ -101,6 +101,9 @@ if (isset($_GET['id']) || isset($_POST['pesanan_id'])) {
                     <li class="nav-item">
                         <a class="nav-link active" href="cek-pesanan.php">Cek Pesanan</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang-kami.php">Tentang Kami</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -236,6 +239,7 @@ if (isset($_GET['id']) || isset($_POST['pesanan_id'])) {
                         <li><a href="layanan.php" class="text-light">Layanan</a></li>
                         <li><a href="pesan.php" class="text-light">Pesan Layanan</a></li>
                         <li><a href="cek-pesanan.php" class="text-light">Cek Pesanan</a></li>
+                        <li><a href="tentang-kami.php" class="text-light">Tentang Kami</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">

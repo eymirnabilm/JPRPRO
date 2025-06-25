@@ -52,6 +52,9 @@ $layanan = $stmt->fetchAll();
                             <a class="nav-link" href="pesanan.php">
                                 <i class="bi bi-cart-check"></i> Kelola Pesanan
                             </a>
+                            <a class="nav-link" href="pengaturan.php">
+                                <i class="bi bi-gear"></i> Pengaturan
+                            </a>
                         </div>
                     </div>
                 </div>
